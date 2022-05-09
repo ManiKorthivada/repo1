@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"></link>
+    
+    <title>Ecommerce Home Page</title>
+  </head>
+  <body>
+    <header class="header-container">
+      <nav class="nav-container">
+          <img src="img/Hamburger menu.svg" alt="Hamburger Logo"/>
+          <img src="img/Logo symbol+text.svg" alt="Logo" class="logo"/>
+          <input type="search" placeholder="Placeholder" class="search-box"/>
+          <ol class="user-menu-list">
+            <li class="user-wishlist">
+              <img src="img/Heart.svg" class="menu-logo" />
+              <div class="menu-title">Wish List</div>
+            </li>
+            <li class="user-signin">
+              <img src="img/Man.svg" class="menu-logo" />
+              <div class="menu-title">Sign In</div>
+            </li>
+            <li class="user-cart">
+              <img src="img/Cart.svg" class="menu-logo" />
+              <div class="menu-title">Cart</div>
+            </li>
+          </ol>
+      </nav>
+    </header>
+    <div class="main-container">
+      <div class="slides">
+        <div class="slide">
+          <div class="item1">
+            <p class="title">Samsung Galaxy S8+ 64 Gb Midnight Black</p>
+            <p class="description">Stainless Steel Case with Fauve Barenia Leather</p>
+            <button>$1,399 Shop now</button>
+          </div>
+          <img class="item2" src="img/image-041.png"/>
+        </div>
+        <div class="slide">
+          <div class="item1">
+            <p class="title">Omega IEM Noise Isolating Earphones</p>
+            <p class="description">Stainless Steel Case with Fauve Barenia Leather</p>
+            <button>$1,399 Shop now</button>
+          </div>
+          <img class="item2" src="img/image-041.png"/>
+        </div>
+        <div class="slide">
+          <div class="item1">
+            <p class="title">Apple Watch Hermes Edition</p>
+            <p class="description">Stainless Steel Case with Fauve Barenia Leather</p>
+            <button>$1,399 Shop now</button>
+          </div>
+          <img class="item2" src="img/image-041.png"/>
+        </div>
+        <img src="img/Arrow-2.svg" onclick="nextPreviousSlide(1)" class="chevron-right"/>
+        <img src="img/Arrow.png" onclick="nextPreviousSlide(-1)" class="chevron-left"/>
+        <div class="horizontal-line">
+          <div class="line-1 line-item"></div>
+          <div class="line-2 line-item"></div>
+          <div class="line-3 line-item"></div>
+        </div>
+        <div class="thumbnails">
+          <div class="item" onclick="currentClickedSlide(1)">
+            <img src="img/image-042.png" alt="1" class="thumbnail-image">
+            <div class="price-info">
+              <p class="thumnail-title">
+                Samsung Galaxy S8+ 64 Gb Midnight Black
+              </p>
+              <p class="thumbnail-price">$829</p>
+            </div>
+          </div>
+          <div class="item" onclick="currentClickedSlide(2)">
+            <img src="img/image-043.png" alt="1" class="thumbnail-image">
+            <div class="price-info">
+              <p class="thumnail-title">
+                Omega IEM Noise Isolating Earphones
+              </p>
+              <p class="thumbnail-price">$349</p>
+            </div>
+          </div>
+          <div class="item" onclick="currentClickedSlide(3)">
+            <img src="img/image-044.png" alt="1" class="thumbnail-image">
+            <div class="price-info">
+              <p class="thumnail-title">
+                Apple Watch Brown Hermes Edition
+              </p>
+              <p class="thumbnail-price">$1,399</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="brands">
+        <img src="img/image-125.png" alt />
+        <img src="img/image-126.png" alt />
+        <img src="img/image-127.png" alt />
+        <img src="img/image-128.png" alt />
+        <img src="img/image-129.png" alt />
+        <a href="#" >View all brands</a>
+      </div>
+      <div class="flash-deals">
+        <div class="title">Flash Deals</div>
+        <div class="item-1">
+          <div class="item-data">
+            <div class="sale-tag">Sale</div>
+            <img src="img/image-130.png" alt="image1" class="item-img"/>
+            <div class="item-title" >Nintendo Switch with Blue and Red Controllers</div>
+            <ul class="item-price">
+              <li class="price">
+                $349
+              </li >
+              <li class="offer-price">
+                $349
+              </li>
+              <li class="divide">
+                
+              </li>
+              <li class="shop-now">
+                Shop now
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="item-2">
+          <div class="item-data">
+            <div class="sale-tag">Sale</div>
+            <img src="img/Image-4.png" alt="image1" height="215px" class="item-img"/>
+            <div class="item-title" >Novation Launchkey Mini MK2 USB Controller</div>
+            <ul class="item-price">
+              <li class="price">
+                $169
+              </li >
+              <li class="offer-price">
+                $99
+              </li>
+              <li class="divide">
+              </li>
+              <li class="shop-now">
+                Shop now
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="item-3">
+          <div class="item-data">
+            <div class="sale-tag">Sale</div>
+            <img src="img/Image-3.png" alt="image1" class="item-img"/>
+            <div class="item-title" >Red Digital Cinema Brain with Dragon 5K Sensor</div>
+            <ul class="item-price">
+              <li class="price">
+                $1,899
+              </li >
+              <li class="offer-price">
+                $1,499
+              </li>
+              <li class="divide">
+                
+              </li>
+              <li class="shop-now">
+                Shop now
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="item-4">
+          <div class="item-data">
+            <div class="item-deal-title">Deal of the Day</div>
+            <img src="img/image-136.png" alt="image1" class="item-img"/>
+            <div class="item-title" >Beats by Dr. Beats Solo3</div>
+            <ul class="item-price">
+              <li class="price">
+                $349
+              </li >
+              <li class="offer-price">
+                $349
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="item-5">
+          <div class="item-data">
+            <div class="sale-tag">Sale</div>
+            <img src="img/image-133.png" alt="image1" class="item-img"/>
+            <div class="item-title" >Chipolo Plus 2.0 Bluetooth Item Tracker Red</div>
+            <ul class="item-price">
+              <li class="price">
+                $24
+              </li >
+              <li class="offer-price">
+                $19
+              </li>
+              <li class="divide">
+                
+              </li>
+              <li class="shop-now">
+                Shop now
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="item-6">
+          <div class="item-data">
+            <div class="sale-tag">Sale</div>
+            <img src="img/Image-2.png" alt="image1" class="item-img"/>
+            <div class="item-title" >Nintendo Switch with Blue and Red Controllers</div>
+            <ul class="item-price">
+              <li class="price">
+                $349
+              </li >
+              <li class="offer-price">
+                $349
+              </li>
+              <li class="divide">
+                
+              </li>
+              <li class="shop-now">
+                Shop now
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="item-7">
+          <div class="item-data">
+            <div class="sale-tag">Sale</div>
+            <img src="img/image-135.png" alt="image1" class="item-img"/>
+            <div class="item-title" >Nintendo Switch with Blue and Red Controllers</div>
+            <ul class="item-price">
+              <li class="price">
+                $349
+              </li >
+              <li class="offer-price">
+                $349
+              </li>
+              <li class="divide">
+                
+              </li>
+              <li class="shop-now">
+                Shop now
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="item-8">
+          <div class="item-data">
+            <div class="sale-tag">Sale</div>
+            <img src="img/image-060.png" alt="image1" class="item-img"/>
+            <div class="item-title" >Apple Watch Series 3</div>
+            <ul class="item-price">
+              <li class="price">
+                $349
+              </li >
+              <li class="offer-price">
+                $299
+              </li>
+            
+              <li class="shop-now">
+                Shop now
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="new-arrival-container">
+        <div class="outer-new-arrival">
+          <p class="title">New Arrival</p>
+        </div>
+        <div class="new-arrival">
+            <div class="item">
+              <img src="img/Image-1.png"" class="item-img"/>
+              <ul>
+                <li class="item-title">Polaroid Originals</li>
+                <li class="item-description">Accepts i-Type 600 Instant Film</li>
+                <li class="item-price">$379</li>
+              </ul>
+            </div>
+            <div class="item">
+              <img src="img/image-138.png"" class="item-img"/>
+              <ul>
+                <li class="item-title">DJI Spark Quadcopter</li>
+                <li class="item-description">2-Axis Stabilized Camera</li>
+                <li class="item-price">$379</li>
+              </ul>
+            </div>
+            <div class="item">
+              <img src="img/image-139.png"" class="item-img"/>
+              <ul>
+                <li class="item-title">Fujifilm instax mini 9</li>
+                <li class="item-description">Accepts Fujifilm Instant Film</li>
+                <li class="item-price">$99</li>
+              </ul>
+            </div>
+            <div class="item">
+              <img src="img/image-140.png"" class="item-img"/>
+              <ul>
+                <li class="item-title">Apple 10.5" iPad Pro</li>
+                <li class="item-description">64GB, Wi-Fi, Rose Gold, Retina</li>
+                <li class="item-price">$719</li>
+              </ul>
+            </div>
+            <img src="img/Arrow-2.svg" class="chevron-right"/>
+            <img src="img/Arrow.png" class="chevron-left"/>
+        </div>
+        
+      </div>
+      <div class="banner-container">
+        <p class="main-title">Apple Watch 3 Review: Don’t Overlook This Shiny, Speedy Upgrade</p>
+        
+        <button class="read-more">Read more -></button>
+        <img src="img/Image.png" alt="Image Watcher" class="banner-img"/>
+      </div>
+      <div class="new-arrival-container">
+        <div class="outer-new-arrival outer-variation">
+          <p class="title">Recommendations for You</p>
+        </div>
+        <div class="new-arrival">
+            <div class="item">
+              <img src="img/Image-141.png"" class="item-img"/>
+              <ul>
+                <li class="item-title">Fitbit Charge 2 Fitness</li>
+                <li class="item-description">PurePulse Heart Rate Tracker</li>
+                <li class="item-price">$149</li>
+              </ul>
+            </div>
+            <div class="item">
+              <img src="img/image-142.png"" class="item-img"/>
+              <ul>
+                <li class="item-title">Nikon 100th Leather Bag</li>
+                <li class="item-description">In Collaboration with ONA</li>
+                <li class="item-price">$249</li>
+              </ul>
+            </div>
+            <div class="item">
+              <img src="img/image-143.png"" class="item-img"/>
+              <ul>
+                <li class="item-title">Google Daydream</li>
+                <li class="item-description">Comfortable, Lightweight Design</li>
+                <li class="item-price">$99</li>
+              </ul>
+            </div>
+            <div class="item">
+              <img src="img/image-144.png"" class="item-img"/>
+              <ul>
+                <li class="item-title">MEE audio KidJamz</li>
+                <li class="item-description">30mm Dynamic Moving Drivers</li>
+                <li class="item-price">$29</li>
+              </ul>
+            </div>
+            <img src="img/Arrow-2.svg" class="chevron-right"/>
+            <img src="img/Arrow.png" class="chevron-left"/>
+        </div>
+        
+      </div>
+      <div class="feature-container">
+        <div class="item">
+          <img class="item-img" src="img/Cards.svg" alt="image1"/>
+          <p class="item-title">Simple Online Payment</p>
+        </div>
+        <div class="item">
+          <img class="item-img" src="img/Clock.svg" alt="image1"/>
+          <p class="item-title">24 Hours Support</p>
+        </div>
+        <div class="item">
+          <img class="item-img" src="img/Compas.svg" alt="image1"/>
+          <p class="item-title">Free Shipping Worldwide</p>
+        </div>
+        <div class="item">
+          <img class="item-img" src="img/Star.svg" alt="image1"/>
+          <p class="item-title">High Quality Products</p>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="footer-container">
+      <div class="footer-top-container">
+        <div class="language">
+          <p class="curreny">USD</p>
+          <img src="img/down.svg" class="chevron-down-1" alt="down icon"/>
+          <p class="locale">English</p>
+          <img src="img/down.svg" class="chevron-down-1" alt="down icon"/>
+        </div>
+        <div class="subscribe">
+          <input type="search" placeholder="Enter you email for subscribe" class="search"/>
+          <div class="send">
+            <img src="img/Send.svg" class="send-img" alt="Send Img" />
+          </div>
+        </div>
+        <div class="social-icons">
+            <div class="icon">
+              <img src="img/Facebook.svg" class="facebook" alt="fb"/>
+            </div>
+            <div class="icon">
+              <img src="img/Instagram.svg" class="instagram" alt="insta"/>
+            </div>
+            <div class="icon">
+              <img src="img/Twitter.svg" class="twitter" alt="twitter"/>
+            </div>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="items">
+          <ul>
+            <li>
+              Shop
+            </li>
+            <li>
+              Ladies
+            </li>
+            <li>
+              Ladies
+            </li>
+            <li>
+              Ladies
+            </li>
+          </ul>
+        </div>
+        
+        <div class="items">
+          <ul>
+            <li>
+              Company
+            </li>
+            <li>
+              About Us
+            </li>
+            <li>
+              Our Store
+            </li>
+            <li>
+              Careers
+            </li>
+          </ul>
+        </div>
+        <div class="items">
+          <ul>
+            <li>
+              Partners
+            </li>
+            <li>
+              Affiliate Program
+            </li>
+            <li>
+              Advertise
+            </li>
+            <li>
+              Vendor Database
+            </li>
+          </ul>
+        </div>
+        <div class="items">
+          <ul>
+            <li>
+              How to Buy
+            </li>
+            <li>
+              Making Payments
+            </li>
+            <li>
+              Delivery Options
+            </li>
+            <li>
+              Buyer Protection
+            </li>
+          </ul>
+        </div>
+        <div class="items">
+          <ul>
+            <li>
+              Resources
+            </li>
+            <li>
+              Blog
+            </li>
+            <li>
+              My Page
+            </li>
+            <li>
+              Links
+            </li>
+          </ul>
+        </div>
+        <div class="items">
+          <u>
+            <li>
+              Help
+            </li>
+            <li>
+              Contacts Us
+            </li>
+            <li>
+              FAQ
+            </li>
+            <li>
+              Privacy Policy
+            </li>
+          </u>
+        </div>
+      </div>
+      <div class="footer-policy">
+        <div class="policy-links">
+          <p>© 2019 Universal UI Kit</p>
+          <p>Privacy & Cookies</p>
+          <p>Term & Conditions</p>
+          <p>Accessibility</p>
+        </div>
+        <div class="apps">
+          <img src="img/40px button App Store.svg" alt="apple" class="apple"/>
+          <img src="img/40px button Google Play.png" alt="google" class="google" />
+        </div>
+      </div>
+    </footer>
+    <script src="script.js" ></script>
+  </body>
+</html>
